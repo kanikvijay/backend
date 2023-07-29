@@ -12,8 +12,8 @@ app.use(bodyParser.json({ limit: "30mb", extended: true }));
 app.use(bodyParser.urlencoded({ limit: "30mb", extended: true }));
 app.use(express.json());
 dotenv.config();
-import Blog from "../Blog-website/models/blogModel.mjs";
-import User from "../Blog-website/models/userModel.mjs";
+import Blog from "./models/blogModel.mjs";
+import User from "./models/userModel.mjs";
 
 // mongo db connection
 connectDb();
